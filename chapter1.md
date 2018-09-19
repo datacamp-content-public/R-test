@@ -3,7 +3,7 @@ title: 'Template Chapter 1'
 description: 'This is a template chapter.'
 ---
 
-## An exercise title written in sentence case
+## Andmete import
 
 ```yaml
 type: NormalExercise
@@ -80,14 +80,7 @@ test_data_frame("andmed1",
                 undefined_cols_msg = "Kontrolli, mis tunnused on andmestikus `andmed1`.",
                 incorrect_msg = "Objekti `andmed1` väärtus ei ole korrektne. Proovi uuesti.") 
  
- 
-#test_object("andmed1",  
-#%            undefined_msg = "Objekt `andmed1` on defineerimata.",
-#            incorrect_msg = "Objekti `andmed1` väärtus ei ole korrektne. Proovi uuesti.") 
- 
- 
- 
- 
+
  
 test_output_contains(expr = "andmed1",
                      times = 1,
@@ -108,6 +101,5 @@ test_function_result(name = "str",
 
 
 
-#
 success_msg("Tubli! Pane tähele, et impordil tekkisid väga pikad tunnusenimed. Seega nõuavad imporditavad failid vahel ka eeltööd. Siin oleks eelnevalt tulnud tekstifailis tunnusenimesid kohendada, need peaks olema sisukad, kuid võimalusel mitte väga pikad. Veerupäistes olevad tühikud ja erisümbolid teisendatakse punktideks. Teine võimalus oleks argumendi `col.names` abil tunnustele uued nimed ette anda.")
 ```
