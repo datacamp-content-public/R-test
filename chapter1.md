@@ -1,6 +1,6 @@
 ---
-title: 'Template Chapter 1'
-description: 'This is a template chapter.'
+title: 'Andmete import'
+description: 'Testime andmete importimise erinevaid võimalusi.'
 ---
 
 ## Andmete import
