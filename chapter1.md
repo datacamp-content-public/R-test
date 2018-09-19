@@ -60,32 +60,6 @@ str(andmed1)
 
 `@sct`
 ```{r}
-# 1
-test_function(name = "read.table",
-              args = c("header", "sep"),
-              index = 1,
-             eq_condition = "equivalent",
-             not_called_msg = "Esimeses ülesandes pead kasutama funktsiooni `read.table`",
-             args_not_specified_msg = paste("Määra `read.table` käsus argumendi", c("`header`", "`sep`" ), "väärtus."),
-             incorrect_msg = paste("Oled funktsioonis `read.table` andnud vale väärtuse argumendile",  c("`header`", "`sep`"))) 
- 
-
-
-
-
-test_data_frame("andmed1",  
-                columns = c("siin.veerus..on.lause",  "uuritavate.identifikaator..see.on.nagu.nimi", "esimesel.katsel.saadud.tulemus..katse.toimus.hommikul.kell.8.30"),
-                eq_condition = "equivalent",
-                undefined_msg = "Andmestik on defineerimata.",
-                undefined_cols_msg = "Kontrolli, mis tunnused on andmestikus.",
-                incorrect_msg = "Objekti väärtus ei ole korrektne. Proovi uuesti.") 
- 
-
- 
-test_output_contains(expr = "andmed1",
-                     times = 1,
-                     incorrect_msg = "Andmestik on ekraanile printimata")
-
 
 success_msg("Tubli! Pane tähele, et impordil tekkisid väga pikad tunnusenimed. Seega nõuavad imporditavad failid vahel ka eeltööd. Siin oleks eelnevalt tulnud tekstifailis tunnusenimesid kohendada, need peaks olema sisukad, kuid võimalusel mitte väga pikad. Veerupäistes olevad tühikud ja erisümbolid teisendatakse punktideks. Teine võimalus oleks argumendi `col.names` abil tunnustele uued nimed ette anda.")
 ```
