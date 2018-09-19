@@ -76,9 +76,9 @@ test_function(name = "read.table",
 test_data_frame("andmed1",  
                 columns = c("siin.veerus..on.lause",  "uuritavate.identifikaator..see.on.nagu.nimi", "esimesel.katsel.saadud.tulemus..katse.toimus.hommikul.kell.8.30"),
                 eq_condition = "equivalent",
-                undefined_msg = "Andmestik `andmed1` on defineerimata.",
-                undefined_cols_msg = "Kontrolli, mis tunnused on andmestikus `andmed1`.",
-                incorrect_msg = "Objekti `andmed1` väärtus ei ole korrektne. Proovi uuesti.") 
+                undefined_msg = "Andmestik on defineerimata.",
+                undefined_cols_msg = "Kontrolli, mis tunnused on andmestikus.",
+                incorrect_msg = "Objekti väärtus ei ole korrektne. Proovi uuesti.") 
  
 
  
