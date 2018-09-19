@@ -85,20 +85,6 @@ test_data_frame("andmed1",
 test_output_contains(expr = "andmed1",
                      times = 1,
                      incorrect_msg = "Andmestik on ekraanile printimata")
- 
- 
-
-
-# 2
-test_function_result(name = "str",
-                     index = 1,
-                     eq_condition = "equivalent",
-                     not_called_msg = "Teises ülesandes pead kasutama funktsiooni `str`",
-                     error_msg = "Teises ülesandes on midagi valesti!",
-                     incorrect_msg = "Oled funktsioonile `str` andnud vale väärtusega argumendi")
-
-
-
 
 
 success_msg("Tubli! Pane tähele, et impordil tekkisid väga pikad tunnusenimed. Seega nõuavad imporditavad failid vahel ka eeltööd. Siin oleks eelnevalt tulnud tekstifailis tunnusenimesid kohendada, need peaks olema sisukad, kuid võimalusel mitte väga pikad. Veerupäistes olevad tühikud ja erisümbolid teisendatakse punktideks. Teine võimalus oleks argumendi `col.names` abil tunnustele uued nimed ette anda.")
